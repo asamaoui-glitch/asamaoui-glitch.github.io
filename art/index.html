@@ -1466,20 +1466,11 @@ endShape(CLOSE);
 }
   
     function figuraEspantat(intensity) {
- let mic;
-function setup() {
-  createCanvas(500, 430);
-mic=new p5.AudioIn();
-  mic.start();
-  
- 
-}
 
-function draw() {
   let pinklevel=80*sin(frameCount*0.02);
   let s= 1+0.003* sin (frameCount*0.2);
-   let vol=mic.getLevel();
-  let h=map(vol,0,1,0,200,true)
+   //let vol=mic.getLevel();
+  //let h=map(vol,0,1,0,200,true)
   let sinus=sin(frameCount*0.1)*5;
   let cosinus=cos(frameCount*0.1)*5;
   background(220);
@@ -1695,20 +1686,11 @@ endShape(CLOSE);
   
     function figuraNeutral(intensity) {
    
-let mic;
-function setup() {
-  createCanvas(500, 430);
-mic=new p5.AudioIn();
-  mic.start();
-  
- 
-}
 
-function draw() {
   let pinklevel=80*sin(frameCount*0.02);
   let s= 1+0.003* sin (frameCount*0.2);
-   let vol=mic.getLevel();
-  let h=map(vol,0,1,0,200,true)
+   //let vol=mic.getLevel();
+  //let h=map(vol,0,1,0,200,true)
   let sinus=sin(frameCount*0.1)*5;
   let cosinus=cos(frameCount*0.1)*5;
   background(220);
